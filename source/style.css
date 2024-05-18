@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--CinzaClaro2);
+}
+
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+
+    padding: 50px;
+
+    background: var(--CinzaEscuro);
+}
+
+h1 {
+    align-self: flex-start;
+}
+
+input {
+    align-self: flex-start;
+
+    padding: 20px;
+    margin: 30px 0px;
+
+    border-style: none;
+    border-radius: 15px;
+
+
+    font-size: 16px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px 3px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+
+    border-radius: 20px;
+
+    background: var(--CinzaClaro);
+
+
+    padding: 30px;
+    gap: 30px;
+
+    font-size: 32px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px 3px;
+}
+
+div {
+    color: var(--Branco);
+}
+
+:root{
+    --Preto: #010409;
+    --CinzaEscuro: #0d1117;
+    --CinzaClaro: #484f58;
+    --CinzaClaro2: #6e7681;
+    --Branco: #fff;
+
+    --Vermelho: rgb(255, 25, 25);
+    --Verde: rgb(25, 255, 25);
+    --Amarelo: rgb(255, 250, 25);
+}
