@@ -6,15 +6,14 @@ var select = document.querySelector("select");
 
 button.addEventListener('click', () => {
     var valueSelect = select.value;
-    
+    var description;
+    var temperature;
+
     if (valueSelect == 'Nome do Local'){
         alert('Por favor antes de consultar, selecione um local.');
     }
     else {
         var URL = `https://api.openweathermap.org/data/2.5/weather?q=${valueSelect}&appid=${APIKey}&lang=pt_br`;
-    
-        let description;
-        let temperature;
 
         fetch(URL)
         .then((response) => response.json())
@@ -39,6 +38,6 @@ button.addEventListener('click', () => {
             let newH4 = document.createElement('h4');
             newH4.innerText = description;
             newDiv.appendChild(newH4);
-        });
+        })
     }
 })
