@@ -5,39 +5,57 @@
     margin: 0px;
 
     font-family: 'Poppins', sans-serif;
-
-    color: var(--CinzaClaro2);
 }
 
 body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     justify-content: center;
-
+    
     padding: 50px;
-
+    
     background: var(--CinzaEscuro);
+    box-shadow: inset;
+
+    color: var(--CinzaClaro2);
 }
 
 h1 {
-    align-self: flex-start;
+    font-size: 50px;
 }
 
-input {
-    align-self: flex-start;
+select {
+    padding: 15px;
+    margin: 50px 20px 30px 0px;
+    
+    width: 250px;
 
-    padding: 20px;
-    margin: 30px 0px;
-
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 15px;
+    border-color: var(--CinzaClaro2);
 
+    background-color: var(--Preto);
 
     font-size: 16px;
+    color: var(--CinzaClaro2);
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px 3px;
+}
+
+button {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: var(--CinzaClaro2);
+
+    color: var(--CinzaClaro2);
+    font-size: 16px;
+
+    padding: 15px;
+    background: var(--Preto);
 }
 
 section {
@@ -59,9 +77,14 @@ section {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 30px 3px;
 }
 
-div {
+section, section div{
     color: var(--Branco);
 }
+
+h2 {
+    font-size: 60px;
+}
+
 
 :root{
     --Preto: #010409;
@@ -69,8 +92,4 @@ div {
     --CinzaClaro: #484f58;
     --CinzaClaro2: #6e7681;
     --Branco: #fff;
-
-    --Vermelho: rgb(255, 25, 25);
-    --Verde: rgb(25, 255, 25);
-    --Amarelo: rgb(255, 250, 25);
 }
